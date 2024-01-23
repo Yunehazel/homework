@@ -1,0 +1,48 @@
+#customers {
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #294b29;
+    color: white;
+    border: 1px solid #DBE7C9;
+    padding: 8px;
+    text-align: center;
+  }
+
+#customers td{
+    background-color: #789461;
+    padding: 8px;
+    border: 1px solid #DBE7C9;
+    text-align: center;
+
+}
+
+  #detail_info{
+    height: 200px;
+    width: 30%;
+    margin-left: 300px;
+    background-color: #50623A;
+   padding: 30px;
+   color: white;
+   text-align: center;
+   border-radius: 20px;
+  }
+
+  .button{
+    padding: 5px 20px;
+    background-color : #DBE7C9;
+  }
+
+  .table_button{
+    padding: 10px  30px;
+    margin: 10px;
+    margin-left: 30px;
+    background-color: #DBE7C9;
+    border-color: #DBE7C9;
+   
+  }

@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/js/project1.js"></script>
 </head>
+    <style>
+        #personal_details{
+            border : solid 2px black ;
+            margin: 40px;
+            padding: 40px;
+        }
+    </style>
 <body>
-    
+
+    <div>
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Age" />
+        <input type="text" placeholder="Gender" />
+        <button>save info</button>
+        <input type="text" id="search_text" name="name" placeholder="Search Person" />
+        <button  id="search_person" onclick="search_person()">Search</button>
+     
+    </div>
+
+    <div id="personal_root">
+       
+    </div>
+
+    <div>
+        
+    </div>
+  <script src="personal_detail.js"></script>
 </body>
+
 </html>

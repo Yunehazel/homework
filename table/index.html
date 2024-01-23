@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Personal Information Update</h2>
+          </div>
+          <div class="modal-body">
+            <input type="number" hidden id="person_id_update">
+            <input type="text" id="person_name_update" name="name" placeholder="Enter name" class="update_data" />
+            <input type="text" id="person_age_update" name="name" placeholder="Enter age" class="update_data" />
+            <textarea placeholder="Enter gender" id="person_gender_update" class="update_data"></textarea>
+            <button onclick="update_data()" id="update_button">Update Data</button>
+    
+          </div>
+         
+        </div>
+      
+      </div>
+    <table id="customers">
+       
+      </table>
+
+     
+    <script src="index.js"></script>
+</body>
+</html>
