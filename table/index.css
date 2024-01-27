@@ -1,3 +1,23 @@
+#bar_template{
+  margin: 30px;
+}
+
+.person_add{
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #50623A;
+  border-radius: 10px;
+}
+
+.person_button{
+  padding: 10px 20px;
+  background-color: #789461;
+  border: 1px solid #789461;
+  border-radius: 30px;
+}
+
+
+
 #customers {
     border-collapse: collapse;
     width: 80%;

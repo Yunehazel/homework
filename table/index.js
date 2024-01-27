@@ -26,6 +26,23 @@ const info_person =[
         age : 23 ,
         gender : "Male" ,
     } ,
+
+    {
+      id : 5,
+      name : "Gorge",
+      age : 22 ,
+      gender : "Male" ,
+  } ,
+
+  {
+    id : 6,
+    name : "Tony",
+    age : 24 ,
+    gender : "Male" ,
+} ,
+
+
+
 ]
 
 const get_id =(id) => document.getElementById(id) ;
@@ -103,15 +120,37 @@ function detail_data(id){
     load_person(info_person);
   }
 
+  // function delete_data(id){
+  //   const delete_person_data = info_person.find(item => item.id === 1) ;
+  //   if (delete_person_data !== -1 ){
+  //   info_person.splice(delete_person_data,1) ;
+  //   for(let i =0 ; i < delete_person_data.length ; i++) {
+  //     info_pereson[i] .id = i+1 ;
+  //   }
+  // }
+  // load_person(info_person) ;
+  // }
+
 function delete_data(id){
-  for(let person of info_person){
-    if (person.id === id) {
-      info_person.splice(info_person.indexOf(person), id);
+  if(id === id){
+    const delete_person = info_person.findIndex((del) => del.id === id );
+    if(delete_person !== 1){
+      info_person.splice(delete_person , 1) ;
     
+    }
   }
   load_person(info_person) ;
 }
-}
+
+// function delete_data(id){
+//   for(let person of info_person){
+//     if (person.id === id) {
+//       info_person.splice(info_person.indexOf(person), id);
+//   }
+//   load_person(info_person) ;
+// }
+// }
+
 
   function update_data() {
     let person_id = get_id("person_id_update").value;
@@ -166,3 +205,32 @@ function delete_data(id){
           document.getElementById("myModal").style.display = "none" ;
         }
       } ;
+
+      function add_person(){
+        let person_name = get_id("person_name").value;
+        let person_age = get_id("person_age").value ;
+        let person_gender = get_id("person_gender").value ;
+        let person_id = info_person.length + 1; 
+        let person_data = {
+            id: person_id,
+            name: person_name,
+            age: person_age,
+            gender: person_gender,
+        };
+        info_person.push(person_data);
+        load_person(info_person);
+      }
+    
+    function search_person(){
+      let keyword = document.getElementById("search_butt").value.toLowerCase() ;
+      const searched_person = info_person.filter((person) => {
+        return (
+          person.name.toLowerCase().includes(keyword) ||
+          person.gender.toLowerCase().includes(keyword) ||
+          person.age.toString().includes(keyword)
+        );
+      });
+      console.log(searched_person);
+      load_person(searched_person);
+    }
+      
