@@ -43,7 +43,7 @@ const info_food = [
       },
       {
         id: 'template9',
-        content: 'Caprese Salad',
+        content: 'Classic Caprese Salad',
         imageUrl: 'https://cdn.dummyjson.com/recipe-images/9.webp',
       },
       {
@@ -93,7 +93,7 @@ const info_food = [
         },
         {
           id: 'template19',
-          content: 'Caprese Salad',
+          content: ' Classic Caprese Salad',
           imageUrl: 'https://cdn.dummyjson.com/recipe-images/9.webp',
         },
         {
@@ -143,7 +143,7 @@ const info_food = [
             },
             {
               id: 'template29',
-              content: 'Caprese Salad',
+              content: 'Classic Caprese Salad',
               imageUrl: 'https://cdn.dummyjson.com/recipe-images/9.webp',
             },
             {

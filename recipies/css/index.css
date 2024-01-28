@@ -28,8 +28,12 @@
 .recipies{
    width: 15%;
     display: flex;
+    transition: transform .2s ;
 }
 
+.recipies:hover{
+  transform: scale(1.1);
+}
 .recipies_items {
   position: relative;
   width: 100%;
